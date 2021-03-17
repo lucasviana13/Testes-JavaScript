@@ -1,0 +1,23 @@
+<html>
+<body>
+<script type="text/javascript">
+function tabu() {
+var x= document.getElementById ("v1").value;
+var x= parseInt(x);
+var z= [x*1, x*2, x*3, x*4, x*5, x*6, x*7, x*8, x*9, x*10];
+var a=	document.getElementById("res");
+var o=1;
+for (var i=0; i<10; i++) {
+a.innerHTML =a.innerHTML + x+ " X "+o+ " = "+ z[i] + "<br>";
+o++;
+}
+}
+</script>
+
+<h1>Tabuada</h1>
+<p>Digite um numero de 1 a 10</p>
+<input type="text"id="v1">
+<button type="button" onclick="tabu()">Gerar</button>
+<p id="res"></p>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+<head>
+<script type="text/javascript">
+var ano;
+ano=window.prompt("Qual o ano que você nasceu?");
+var hoje= new Date();
+ano=parseInt(ano);
+var anoatual=hoje.getFullYear();
+var newidade=anoatual-ano;
+if (newidade>=18) {
+document.writeln("<h1>Boas Vindas</h1>");
+} else {
+window.alert( "Conteudo Impróprio para menores, busque outro site para navegar…");
+window.open("http://duckduckgo.com/");
+}
+</script>
+</head>
+<body>
+
+</body>
+</html>
